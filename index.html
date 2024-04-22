@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas favoritas</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainPage">
+        <section >
+            <nav class="main-nav">
+                <h1>Mis recetas favoritas</h1>
+            </nav>
+        </section>
+        <!-- Página Principal -->
+        <div class="Fondo" >
+            <div class="container">
+                <div>
+                    <h2>What would you like to cook?</h2>
+                </div>
+                <div class="contenedor-buscar">
+                    <input type="text" id="searchInput" placeholder="Enter your search...">
+                    <button id="searchButton"><img src="Imagenes/buscar.png"> </button>
+                </div>
+                <div class ='contenedor-desplegar'>
+                    <select id="searchCriteria">
+                        <option value="name">Name of the dish</option>
+                        <option value="ingredient">Principal ingredient</option>
+                        <option value="category">Category</option>
+                        <option value="area">Area</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Galería de Resultados -->
+    <div id="resultsPage" style="display: none;">
+        <section>
+            <nav class="resul-nav">
+                <h1>Search results</h1>
+            </nav>
+        </section>
+        <div id="resultsGallery" class="gallery"></div>
+        <button id="backButton"><img src="Imagenes/atras.png"></button>
+    </div>
+    <!-- Información del Plato -->
+    <div id="recipePage" style="display: none;">
+        <section >
+            <nav class="resul-nav">
+                <h1 id="recipeTitle"></h1>
+            </nav>
+        </section>
+        <div class="recipe-details-container">
+            <div id="recipeImage" class="recipe-image"></div>
+            <div class="recipe-details">
+                <div id="recipeIngredients"></div>
+                <div id="recipeInstructions"></div>
+            </div>
+        </div>
+        <button id="backButton2"><img src="Imagenes/atras.png"></button>
+    </div>
+    <footer id="miFooter"> Recetas favoritas desarrollado por Carolina Jiménez Restrepo. Contacto: carolina.jimenez3@udea.edu.co</footer>
+    <script src="script.js"></script>
+</body>
+</html>
